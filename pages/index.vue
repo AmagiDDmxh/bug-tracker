@@ -1,19 +1,19 @@
 <template>
   <div class="container">
     <VuesaxLogo />
-    <Logo />
     bug tracker
+    <BugList />
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
 import VuesaxLogo from '~/components/VuesaxLogo.vue'
+import BugList from '~/components/BugList'
 
 export default {
   components: {
-    Logo,
     VuesaxLogo,
+    BugList,
   },
 }
 </script>
@@ -23,6 +23,7 @@ export default {
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
